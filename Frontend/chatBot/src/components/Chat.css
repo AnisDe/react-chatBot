@@ -1,0 +1,83 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f6fa;
+  font-family: "Inter", sans-serif;
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.message-bubble {
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.message-bubble.user {
+  background: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+.message-bubble.bot {
+  background: #e5e5e5;
+  color: black;
+  align-self: flex-start;
+}
+
+.placeholder {
+  color: #aaa;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.chat-input-container {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #eee;
+  gap: 8px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.chat-input:focus {
+  border-color: #007bff;
+}
+
+.send-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-button:hover {
+  background: #0056b3;
+}
